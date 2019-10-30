@@ -16,12 +16,12 @@
            fetch="https://gitlab.com/" />
 
   <!-- General -->
-  <project path="bionic" name="bionic" remote="bootleggers" />
-  <project path="bootable/recovery" name="bootable_recovery" remote="bootleggers" />
-  <project path="manifest" name="manifest" remote="bootleggers" />
+  <project path="bionic" name="bionic" remote="bootleggers" revision="queso-r9" />
+  <project path="bootable/recovery" name="bootable_recovery" remote="bootleggers" revision="queso-r9" />
+  <project path="manifest" name="manifest" remote="bootleggers" revision="queso-r9" />
 
   <!-- Build -->
-  <project path="build/make" name="build" remote="bootleggers">
+  <project path="build/make" name="build" remote="bootleggers" revision="queso-r9" >
     <copyfile src="core/root.mk" dest="Makefile" />
     <linkfile src="CleanSpec.mk" dest="build/CleanSpec.mk" />
     <linkfile src="buildspec.mk.default" dest="build/buildspec.mk.default" />
@@ -30,7 +30,7 @@
     <linkfile src="target" dest="build/target" />
     <linkfile src="tools" dest="build/tools" />
   </project>
-  <project path="build/soong" name="build_soong" remote="bootleggers">
+  <project path="build/soong" name="build_soong" remote="bootleggers" revision="queso-r9" >
     <linkfile src="root.bp" dest="Android.bp" />
     <linkfile src="bootstrap.bash" dest="bootstrap.bash" />
   </project>
@@ -43,12 +43,12 @@
 
   <!-- Hardware -->
   <project path="hardware/bootleg/interfaces" name="hardware_bootleg_interfaces" remote="bootleggers" />
-  <project path="hardware/interfaces" name="hardware_interfaces" remote="bootleggers" />
+  <project path="hardware/interfaces" name="hardware_interfaces" remote="bootleggers" revision="queso-r9" />
 
   <!-- Framework -->
-  <project path="frameworks/av" name="frameworks_av" remote="bootleggers" />
-  <project path="frameworks/base" name="frameworks_base" remote="bootleggers" />
-  <project path="frameworks/native" name="frameworks_native" remote="bootleggers" />
+  <project path="frameworks/av" name="frameworks_av" remote="bootleggers" revision="queso-r9" />
+  <project path="frameworks/base" name="frameworks_base" remote="bootleggers" revision="queso-r9" />
+  <project path="frameworks/native" name="frameworks_native" remote="bootleggers" revision="queso-r9" />
 
   <!-- Prebuilts -->
   <project path="prebuilts/tools-bootleg" name="prebuilts_tools-bootleg" remote="bootleggers" clone-depth="1" />
@@ -56,15 +56,15 @@
   <!-- Packages repos -->
   <project path="packages/apps/BootlegDumpster" name="packages_apps_BootlegDumpster" remote="bootleggers" />
   <project path="packages/apps/Jelly" name="packages_apps_Jelly" remote="bootleggers" />
-  <project path="packages/apps/Launcher3" name="packages_apps_Launcher3" remote="bootleggers" />
-  <project path="packages/apps/Settings" name="packages_apps_Settings" remote="bootleggers" />
-  <project path="packages/services/Telecomm" name="packages_services_Telecomm" remote="bootleggers" />
-  <project path="packages/apps/ThemePicker" name="packages_apps_ThemePicker" remote="bootleggers" />
+  <project path="packages/apps/Launcher3" name="packages_apps_Launcher3" remote="bootleggers" revision="queso-r9" />
+  <project path="packages/apps/Settings" name="packages_apps_Settings" remote="bootleggers" revision="queso-r9" />
+  <project path="packages/services/Telecomm" name="packages_services_Telecomm" remote="bootleggers" revision="queso-r9" />
+  <project path="packages/apps/ThemePicker" name="packages_apps_ThemePicker" remote="bootleggers" revision="queso-r9" />
   <project path="packages/overlays/Shishufied" name="packages_overlays_Shishufied" remote="bootleggers" />
 
   <!-- System -->
-  <project path="system/core" name="system_core" remote="bootleggers" />
-  <project path="system/vold" name="system_vold" remote="bootleggers" />
+  <project path="system/core" name="system_core" remote="bootleggers" revision="queso-r9" />
+  <project path="system/vold" name="system_vold" remote="bootleggers" revision="queso-r9" />
 
   <!-- Vendor -->
   <project path="vendor/bootleggers" name="vendor_bootleggers" remote="bootleggers" />
